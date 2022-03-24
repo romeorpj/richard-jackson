@@ -115,14 +115,30 @@ body {
     align-items: center;
 }
 .intro-text{
-    color: #fbfeff;
+    color: rgb(233,233,233);
     font-size: 2rem;
     text-transform: capitalize;
 }
 .author-name{
     font-weight: 400;
 }
-
+.slider{
+    background:rgb(233,233,233);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+.hide{
+    background: black;
+    overflow: hidden;
+}
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
 /*\*/
 /*\*/
 /*\*/
