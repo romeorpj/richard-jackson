@@ -35,7 +35,7 @@ body {
 }
 
 :root{
-    --black: #111111;
+    --black: #181A18;
     --accent-red: #bd1e51;
     --font-gray:#aaaaaa;
     --yellow: #f4db7d;
@@ -77,14 +77,14 @@ body {
     display: none;
 }
 /*TODO: HERO GRID*/
-.hero-grid{
+.hero-grid {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.fullstack{
-    font-size: calc(1rem + 13.5vw);
+.fullstack, .developer{
+    font-size: calc(1rem + 14.5vw);
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -95,11 +95,19 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
-.developer-slide .developer{
-    font-size: calc(1rem + 13.5vw);
-    font-weight: 700;
+/*TODO: ABOUT SECTION*/
+.mini-about-me{
     text-align: center;
-    text-transform: uppercase;
+}
+.mini-about-me span{
+    color: var(--accent-red);
+}
+.cake-emojis{
+    font-size: clamp(2rem,calc(.5rem + 4.5vw),5rem);
+}
+.about-section img{
+    width: 100%;
+    max-width: 450px;
 }
 /*TODO: INTRO/LOAD TRANSITION*/
 .intro{
@@ -151,17 +159,16 @@ body {
 /*\*/
 /*\*/
 /*TODO: MEDIA QUERIES*/
-@media (min-width: 576px) {
-.nav-quote{
-    display: block;
-}
-}
-
-/*responsive font*/
-/*@media (max-width: 1140px) {*/
-/*    .fullstack{*/
-/*        font-size: calc(1vw + 20rem)*/
-/*        ;*/
-
-/*    }*/
+@media (min-width: 540px) {
+/*.nav-quote{*/
+/*    display: block;*/
 /*}*/
+    .fullstack, .developer{
+        font-size: calc(1rem + 15.5vw);
+    }
+}
+@media (min-width: 768px) {
+   .fullstack, .developer{
+        font-size: calc(1rem + 16vw);
+    }
+}
