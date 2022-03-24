@@ -31,3 +31,13 @@ body {
     line-height: 1.5;
 }
 
+:root{
+    --black: #111111;
+    --accent-red: #bd1e51;
+    --font-gray:#aaaaaa;
+    --yellow: #f4db7d;
+    --orange: #ff6a3d;
+    --blue:#9daaf2;
+    --site-pad:0rem 5rem;
+}
+
