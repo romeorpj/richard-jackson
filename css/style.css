@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+
 }
 
 html:focus-within {
@@ -29,6 +30,8 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    background: var(--black);
+    color: var(--font-gray);
 }
 
 :root{
@@ -38,6 +41,111 @@ body {
     --yellow: #f4db7d;
     --orange: #ff6a3d;
     --blue:#9daaf2;
-    --site-pad:0rem 5rem;
+    --site-pad:0rem 2rem;
+    --bdr-radius: 15px;
+    --soft-gray:#565656;
 }
 
+/*TODO: NAVIGATION*/
+.landing{
+    padding: var(--site-pad);
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    border: #f4db7d 1px solid;
+    margin-bottom: 2rem;
+
+}
+.nav-links p{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 12px;
+}
+.nav-links .nav-contact-btn{
+    width: 98px;
+    height: 33px;
+    border-radius: var(--bdr-radius);
+    border: var(--font-gray) 2px solid;
+    background: transparent;
+    color: var(--font-gray);
+}
+/*Hide quote*/
+.nav-quote{
+    display: none;
+}
+/*TODO: HERO GRID*/
+.hero-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.fullstack{
+    font-size: calc(1rem + 13.5vw);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.developer-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.developer-slide .developer{
+    font-size: calc(1rem + 13.5vw);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*TODO: INTRO/LOAD TRANSITION*/
+.intro{
+    background:black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*height: 100vh;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text{
+    color: #fbfeff;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.author-name{
+    font-weight: 400;
+}
+
+/*\*/
+/*\*/
+/*\*/
+/*\*/
+/*\*/
+/*\*/
+/*\*/
+/*\*/
+/*\*/
+/*\*/
+/*\*/
+/*TODO: MEDIA QUERIES*/
+@media (min-width: 576px) {
+.nav-quote{
+    display: block;
+}
+}
+
+/*responsive font*/
+/*@media (max-width: 1140px) {*/
+/*    .fullstack{*/
+/*        font-size: calc(1vw + 20rem)*/
+/*        ;*/
+
+/*    }*/
+/*}*/
