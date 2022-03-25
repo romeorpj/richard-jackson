@@ -31,7 +31,13 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     background: var(--black);
-    color: var(--font-gray);
+    color: var(--soft-white);
+}
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
 }
 
 :root{
@@ -43,9 +49,9 @@ body {
     --blue:#9daaf2;
     /*-------*/
     --dark-purple: #28104e;
-    --main-purple:#6237a0;
+    --main-purple: rgb(62, 30, 108);
     --mid-purple:#9754cb;
-    --lt-purple:#dfadf4;
+    --lt-purple: rgba(223, 173, 244, 0.32);
     --site-pad:0rem 2rem;
     --bdr-radius: 15px;
     --soft-gray:#565656;
@@ -56,6 +62,7 @@ body {
 /*TODO: NAVIGATION*/
 .landing{
     padding: var(--site-pad);
+    width: 100%;
 }
 .nav-links{
     display: flex;
@@ -63,8 +70,6 @@ body {
     align-items: center;
     height: 13vh;
     border-bottom: var(--main-purple) 1px solid;
-
-
 }
 .nav-links p{
     font-size: 1.4rem;
@@ -109,6 +114,7 @@ body {
 .about-section{
     width: 100%;
 gap: 25px;
+    max-width: var(--container-max-width);
     /*margin-top: 15px;*/
     /**/
 }
@@ -187,9 +193,87 @@ gap: 25px;
     display: inline-block;
 }
 /*TODO: QUOTE SECTIONS*/
-.positive-polygon{
-    width: 30%;
+.positive-quote{
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
+.positive-polygon{
+    width: 50%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 44;
+}
+.positive-quote p{
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    background-color: var(--black);
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 49;
+}
+/*TODO: SKILLS SECTION*/
+.skills-section{
+    width: 100%;
+    background-color: var(--dark-purple);
+    position: relative;
+}
+.skills-gradient-purple{
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(var(--black), var(--dark-purple));
+}
+.skills-section h2{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--soft-white);
+}
+.skills-section h2:last-of-type{
+    font-weight: 400;
+    color: var(--soft-white);
+}
+.skills-list-section{
+    margin-top: 30px;
+}
+.skills-wrapper{
+    padding: var(--site-pad);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.skills-wrapper p{
+    font-size: 2.7rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--main-purple);
+    transition: all 750ms 50ms ease-in-out;
+}
+.skills-wrapper p:hover{
+color: var(--soft-white);
+    transform: scale(1.2);
+}
+.skills-wrapper p:not(:hover){
+    filter: blur(3px);
+}
+/*TODO: JOIN FORCES SECTION*/
+.skills-gradient-black{
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(var(--dark-purple),var(--black));
+}
+
+
+
+
 /*\*/
 /*\*/
 /*\*/
@@ -219,7 +303,7 @@ gap: 25px;
         display: flex;
         align-items: center;
         /*justify-content: space-around;*/
-        max-width:var(--container-max-width) ;
+        /*max-width:var(--container-max-width) ;*/
         margin: 0 auto;
         justify-content: space-between;
     }
