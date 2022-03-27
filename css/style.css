@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap');
 
 *,
 *::before,
@@ -26,6 +25,13 @@ html {
 P, li, button{
     font-size: 1.6rem;
 }
+/*h2{*/
+/*    font-size: 4rem;*/
+/*    !*color: var(--lt-purple);*!*/
+/*    font-weight: 600;*/
+/*    margin-bottom: .6rem;*/
+/*    text-transform: uppercase;*/
+/*}*/
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
@@ -50,11 +56,11 @@ picture {
     /*-------*/
     --dark-purple: #28104e;
     --main-purple: rgb(62, 30, 108);
-    --mid-purple:#9754cb;
-    --lt-purple: rgba(223, 173, 244, 0.32);
+    --mid-purple: rgba(188, 131, 239, 0.67);
+    --lt-purple: rgb(182, 85, 234);
     --site-pad:0rem 2rem;
     --bdr-radius: 15px;
-    --soft-gray:#565656;
+    --soft-gray: #939393;
     --soft-white:rgb(233,233,233);
     --container-max-width:1400px
 }
@@ -89,13 +95,47 @@ picture {
     display: none;
 }
 /*TODO: HERO HEADLINE*/
-.hero-grid {
+.hero-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
-    margin: 35px 0;
+    padding-top: 15rem;
+    height: 87vh;
     /*height: 30vh;*/
+    position: relative;
+}
+
+.introduction-name{
+    font-size: 3rem;
+    color: var(--mid-purple);
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+.introduction-description{
+    /*color: var(--lt-purple);*/
+    color: var(--soft-gray);
+        font-size: 1.7rem;
+        font-family: 'JetBrains Mono', monospace;
+        margin-bottom: 2rem;
+}
+.introduction-btn{
+    width: 105px;
+    height: 30px;
+    border-radius: var(--bdr-radius);
+    background: var(--mid-purple);
+    color: var(--dark-purple);
+    cursor: pointer;
+}
+.fullstack-section{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
 }
 .fullstack, .developer{
     font-size: calc(1rem + 14.5vw);
@@ -110,28 +150,43 @@ picture {
     align-items: center;
     flex-wrap: wrap;
 }
+
 /*TODO: ABOUT SECTION*/
 .about-section{
     width: 100%;
 gap: 25px;
     max-width: var(--container-max-width);
-    /*margin-top: 15px;*/
+    margin-top: 60px;
     /**/
 }
-.mini-about-me{
-    text-justify: inter-word;
-    font-size:calc(1.5rem + 3vw);
-    /*font-size:calc(.5rem + 3vw);*/
-    margin-bottom: 70px;
+.about-h2{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    opacity: .5;
+}
+.about-h2::after{
 
 }
-.mini-about-me span:first-child{
-    color: var(--accent-red);
-    padding: 0 6px;
-    background: var(--soft-white);
-    font-weight: 600;
-    flex: 2;
+.mini-about-me{
+    /*display: flex;*/
+    /*justify-content: space-evenly;*/
+    text-justify: inter-word;
+    /*font-size:calc(.5rem + 3vw);*/
+    /*font-size:calc(.5rem + 3vw);*/
+   color: var(--soft-gray);;
+    font-weight: 300;
+    /*font-family: 'JetBrains Mono', monospace;*/
+
+
 }
+/*.mini-about-me span:first-child{*/
+/*    color: var(--soft-white);*/
+/*    padding: 0 6px;*/
+/*    background: var(--main-purple);*/
+/*    font-weight: 500;*/
+/*    flex: 2;*/
+/*}*/
 .cake-emojis{
     font-size: clamp(2rem,calc(.5rem + 4.5vw),5rem);
 }
@@ -142,18 +197,7 @@ gap: 25px;
     margin: 0 auto;
     flex: 1;
 }
-.about-btn{
-    width: 95px;
-    height: 30px;
-    border-radius: var(--bdr-radius);
-    /*border: var(--font-gray) 2px solid;*/
-    background: var(--font-gray);
-    color: var(--black);
-    /*margin-bottom: 18px;*/
-    position: relative;
-    bottom: 5px;
-    cursor: pointer;
-}
+
 /*TODO: INTRO/LOAD TRANSITION*/
 .intro{
     background:black;
@@ -287,6 +331,7 @@ color: var(--soft-white);
     font-size: 2.5rem;
     text-transform: capitalize;
     background-color: var(--black);
+    cursor: pointer;
 }
 
 
