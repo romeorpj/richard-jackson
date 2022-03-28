@@ -6,18 +6,24 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="/js/app.js" defer></script>
 </head>
 <body>
 <main>
         <section class="landing">
             <nav class="nav-links">
-                <div class="nav-logo"><p>Richard<br>Jackson</p></div>
+<!--                <div class="nav-logo"><p>Richard<br>Jackson</p></div>-->
                 <div class="nav-quote"><p>i can handle this!</p></div>
-                <div class="availability"><p>now available for work</p></div>
+                <div class="availability">
+                    <p class="status">current status:</p>
+                    <p>now available for work</p></div>
                 <div class="contact">
-                    <button type="submit" class="nav-contact-btn">Contact</button>
+                    <a href="#email-me"><button type="submit" class="nav-contact-btn" >Contact</button></a>
                 </div>
             </nav>
             <div class="hero-section">
@@ -28,8 +34,8 @@
                         into
                         enjoyable
                         web &lt;/<span class="intro-switcher"></span>&gt;.</p>
-                    <p class="introduction-description"></p>
-                    <button type="submit" class="introduction-btn">Get In Touch</button>
+<!--                    <p class="introduction-description"></p>-->
+                    <a href="#email-me"><button type="submit" class="introduction-btn">Get In Touch</button></a>
                 </div>
                 <div class="fullstack-section">
                     <p class="fullstack">Fullstack</p>
@@ -37,22 +43,27 @@
                 </div>
             </div>
             <div class="about-section">
-                <h2 class="about-h2">about me</h2>
-                <div class="about-paragraphs">
-                    <p class="mini-about-me">
-                        <span>Hello friends!</span> My name is Richard Jackson and I oddly enjoy providing solutions to
-                        tough problems on the interwebz.</p> <br>
-                    <p class="mini-about-me">But when I'm not saving the world one website a time, you can
-                        always find me eating lots of cake <span class="cake-emojis">🍰</span> struggling with baby
-                        weights
-                        at
-                        the gym. Or watching cartoons with my kids.</p>
+                <div class="about-design">
+                    <h2 class="title-h2">about me.</h2>
+<!--                    <div class="h2-divider"></div>-->
+<!--                    <img src="img/polygon02.png" alt="polygon object" class="polygon-h2">-->
                 </div>
-                <img src="img/richardpic.jpeg" alt="mommy and me">
+                <div class="about-details">
+                    <p class="about-me-paragraph">
+                        <span>Hello friends!</span> My name is Richard Jackson and if I am not somewhere eating cake
+                        <span class="cake-emojis">🍰</span>
+                        and watching cartoons with my kids... I'm problem nerding
+                        out over all the cool things you can
+                        do with code on the internet.</p>
+                    <div class="about-me-richard-wrapper">
+                        <img src="img/richardincar.JPG" alt="it is I, Richard" class="about-me-richard">
+                    </div>
+
+                </div>
             </div>
             <section class="positive-quote">
-                <p>creating positive vibes</p>
-                <img src="img/Polygon04.png" class="positive-polygon" alt="polygon">
+                <p>be positive</p>
+                <img src="img/polygon07.png" class="positive-polygon" alt="polygon">
             </section>
         </section>
             <section class="skills-section">
@@ -61,8 +72,8 @@
                 <h2>...i got you covered</h2>
                 <div class="skills-list-section">
                     <!--                    javascript adds skills here-->
-                    <div class="skills-wrapper">
-                        <p>html.</p>
+                    <div class="skills-wrapper ">
+                        <p class="bounce-alt-in">html.</p>
                         <p>css.</p>
                         <p>javascript.</p>
                         <p>react.</p>
@@ -83,20 +94,89 @@
                         <p>java.</p>
                         <p>jquery<./p>
                     </div>
-                </div>
-            </section>
-    <section class="join-forces-section">
-        <div class="skills-gradient-black"></div>
-        <p>Let's work together.</p>
-        <div class="contact"><button type="submit" class="nav-contact-btn btn">Contact Me</button></div>
-<!--        <img src="img/Polygon02.png" class="positive-polygon" alt="polygon">-->
-    </section>
 
-<!--    TODO: BEGIN LOAD TRANSITION-->
+                </div>
+                <div class="skills-gradient-black"></div>
+            </section>
+
+
+        <section class="positive-quote quote-box">
+            <p>be bold</p>
+            <img src="img/polygon03.png" class="positive-polygon" alt="polygon">
+<!--            <button type="submit" class="btn">Contact Me</button>-->
+        </section>
+
+        <section class="projects-section">
+            <div class="about-design">
+                <h2 class="title-h2">Projects.</h2>
+                <!--                    <div class="h2-divider"></div>-->
+<!--                <img src="img/polygon05.png" alt="polygon object" class="polygon-h2">-->
+            </div>
+            <div class="projects-grid">
+                <div class="image-containers">
+                    <img src="/img/project-images/weather-mappy.jpg" alt="weather map">
+                    <div class="project-title-wrapper">
+                        <p class="project-title">weathermappy</p>
+                    </div>
+                </div>
+                <div class="image-containers">
+                    <img src="/img/project-images/clocks.jpg" alt="clocks">
+                    <div class="project-title-wrapper">
+                        <p class="project-title">working clocks</p>
+                    </div>
+                </div>
+                <div class="image-containers">
+                    <img src="/img/project-images/signup-form.jpg" alt="signup form">
+                    <div class="project-title-wrapper">
+                        <p class="project-title">signup form</p>
+                    </div>
+                </div>
+                <div class="image-containers">
+                    <img src="/img/project-images/beat-machine.jpg" alt="beat machine">
+                    <div class="project-title-wrapper">
+                        <p class="project-title">beat machine</p>
+                    </div>
+                </div>
+                <div class="image-containers">
+                    <img src="/img/project-images/groot-card.jpg" alt="groot card">
+                    <div class="project-title-wrapper">
+                        <p class="project-title">beat machine</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    <section class="landing">
+        <div class="contact-section-wrapper" id="email-me">
+            <div class="contact-section">
+                <div class="about-section">
+                    <div class="about-design">
+                        <h2 class="contact-title-h2">shoot me an email</h2>
+                        <!--                    <div class="h2-divider"></div>-->
+<!--                        <img src="img/polygon02.png" alt="polygon object" class="polygon-h2">-->
+                    </div>
+                </div>
+                <div class="contact-email">
+                    <div class="email-address">
+                        <p class="nope addy">richard.p.jackson2@gmail.com</p>
+                    </div>
+                    <div class="email-icon ">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--        </section>-->
+
+    </section>
+    <!--    TODO: BEGIN LOAD TRANSITION-->
     <div class="intro">
         <div class="intro-text">
             <h1 class="hide">
-               <span class="text">We are the music makers,</span>
+                <span class="text">We are the music makers,</span>
             </h1>
             <h1 class="hide">
                  <span class="text">
