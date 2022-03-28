@@ -193,6 +193,7 @@ picture {
     position: absolute;
     bottom: 0;
     width: 100%;
+    max-width: 2000px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -200,19 +201,24 @@ picture {
 
 }
 .fullstack, .developer{
-    font-size: calc(1rem + 10.5vw);
+    /*font-size: calc(1rem + 10.5vw);*/
+    font-size: 13vw;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     line-height: 1.2;
     color: var(--soft-gray);
 }
-.developer-slide{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.developer{
+    line-height: .8;
+    padding-bottom: 10px;
 }
+/*.developer-slide{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-wrap: wrap;*/
+/*}*/
 
 /*TODO: ABOUT SECTION*/
 .about-section{
@@ -270,19 +276,22 @@ margin-bottom: 7rem;
 .about-me-richard{
     filter: grayscale(50%);
     width:100%;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 350px;
+    max-height: 350px;
     border-radius: 15px;
 
 }
 .about-me-richard-wrapper{
     position: relative;
+    /*width: 100%;*/
+    background-image: url("img/richardincar.JPG");
+
 }
 .about-me-richard-wrapper::after{
     content: " ";
     position: absolute;
-    width: 100%;
-    height: 100%;
+    /*width: 100%;*/
+    /*height: 100%;*/
     /*max-width: 300px;*/
     /*max-height: 300px;*/
     border-radius: 15px;
@@ -300,12 +309,12 @@ margin-bottom: 7rem;
     top: 10px;
     left: 10px;
 }
-.about-details{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
+/*.about-details{*/
+/*    display: flex;*/
+/*!*    flex-wrap: wrap;*!*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
 
 /*TODO: QUOTE SECTIONS*/
 .positive-quote{
@@ -625,17 +634,21 @@ width: 100%;
 
 }
 @media (min-width: 768px) {
-   .fullstack, .developer{
-        font-size: calc(1rem + 16vw);
-    }
+   /*.fullstack, .developer{*/
+   /*     font-size: calc(1rem + 16vw);*/
+   /* }*/
     /*margin: 35px 0 90px 0;*/
+    .developer{
+        line-height: .8;
+        padding-bottom: 5px;
+    }
     .about-section{
         display: flex;
         align-items: center;
-        /*justify-content: space-around;*/
+        justify-content: space-around;
         /*max-width:var(--container-max-width) ;*/
-        margin: 0 auto;
-        justify-content: space-between;
+        /*margin: 0 auto;*/
+
     }
     .mini-about-me{
 
@@ -657,17 +670,25 @@ width: 100%;
         bottom: 13px;
     }
 }
-@media (min-width: 1200px) {
-    .mini-about-me{
-
-        /*font-size:calc(.5rem + 2.5vw);*/
-        padding-right: 20px;
-        flex: 1;
-    }
-    .about-section img{
-
-        max-width: 550px;
-        display: block;
-        /*margin: 0 auto;*/
+@media (min-width: 992px){
+    .about-details{
+        display: flex;
+        /*    flex-wrap: wrap;*/
+        align-items: center;
+        justify-content: center;
     }
 }
+/*@media (min-width: 1200px) {*/
+/*    .mini-about-me{*/
+
+/*        !*font-size:calc(.5rem + 2.5vw);*!*/
+/*        padding-right: 20px;*/
+/*        flex: 1;*/
+/*    }*/
+/*    .about-section img{*/
+
+/*        max-width: 550px;*/
+/*        display: block;*/
+/*        !*margin: 0 auto;*!*/
+/*    }*/
+/*}*/
