@@ -15,17 +15,46 @@
 </head>
 <body>
 <main>
-        <section class="landing">
-            <nav class="nav-links">
-<!--                <div class="nav-logo"><p>Richard<br>Jackson</p></div>-->
-                <div class="nav-quote"><p>i can handle this!</p></div>
-                <div class="availability">
-                    <p class="status">current status:</p>
-                    <p>now available for work</p></div>
-                <div class="contact">
-                    <a href="#email-me"><button type="submit" class="nav-contact-btn" >Contact</button></a>
+<!--<div class="cursor"></div>-->
+
+
+            <nav>
+<!--                <div class="logo">-->
+<!--                    <img src="logo.svg" alt="Logo Image">-->
+<!--                </div>-->
+                <div class="hamburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
+                <ul class="nav-links">
+                    <li><a href="#">To Top</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#email-me">Contact</a></li>
+                    <li><a href="https://github.com/romeorpj"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/richard-jackson-049779231/"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
             </nav>
+
+
+
+
+
+
+<!--            TODO: OLD NAVLINKS-->
+<!--            <nav class="nav-links">-->
+<!--&lt;!&ndash;                <div class="nav-logo"><p>Richard<br>Jackson</p></div>&ndash;&gt;-->
+<!--                <div class="nav-quote"><p>i can handle this!</p></div>-->
+<!--                <div class="availability">-->
+<!--                    <p class="status">current status:</p>-->
+<!--                    <p>now available for work</p></div>-->
+<!--                <div class="contact">-->
+<!--                    <a href="#email-me"><button type="submit" class="nav-contact-btn" >Contact</button></a>-->
+<!--                </div>-->
+<!--            </nav>-->
             <div class="hero-section">
                 <div class="introduction-section">
                     <p class="introduction-name">Hello, I'm Richard 😄</p>
@@ -38,11 +67,11 @@
                     <a href="#email-me"><button type="submit" class="introduction-btn">Get In Touch</button></a>
                 </div>
                 <div class="fullstack-section">
-                    <p class="fullstack">Fullstack</p>
-                    <p class="developer">Developer</p>
+                    <p class="fullstack">available</p>
+                    <p class="developer">for work</p>
                 </div>
             </div>
-            <div class="about-section">
+            <div class="about-section" id="about">
 
                 <div class="about-details">
                     <div class="about-left">
@@ -56,9 +85,9 @@
                             out over all the cool things you can
                             do with code on the internet.</p>
                     </div>
-
+<!--<div class="tester"></div>-->
                     <div class="about-me-richard-wrapper">
-<!--                        <img src="img/richardincar.JPG" alt="it is I, Richard" class="about-me-richard">-->
+                        <img src="img/richcar.JPG" alt="it is I, Richard" class="about-me-richard">
                     </div>
                 </div>
             </div>
@@ -66,9 +95,10 @@
                 <p>be positive</p>
                 <img src="img/polygon07.png" class="positive-polygon" alt="polygon">
             </section>
-        </section>
-            <section class="skills-section">
-                <div class="skills-gradient-purple"></div>
+<div class="skills-outerwrapper">
+    <div class="skills-gradient-purple"></div>
+            <section class="skills-section" id="skills">
+
                 <h2>need talent?</h2>
                 <h2>...i got you covered</h2>
                 <div class="skills-list-section">
@@ -97,9 +127,10 @@
                     </div>
 
                 </div>
-                <div class="skills-gradient-black"></div>
-            </section>
 
+            </section>
+    <div class="skills-gradient-black"></div>
+</div>
 
         <section class="positive-quote quote-box">
             <p>be bold</p>
@@ -107,7 +138,7 @@
 <!--            <button type="submit" class="btn">Contact Me</button>-->
         </section>
 
-        <section class="projects-section">
+        <section class="projects-section" id="projects">
             <div class="about-design">
                 <h2 class="title-h2">Projects.</h2>
                 <!--                    <div class="h2-divider"></div>-->
@@ -148,7 +179,7 @@
 
             </div>
         </section>
-    <section class="landing">
+
         <div class="contact-section-wrapper" id="email-me">
             <div class="contact-section">
                 <div class="about-section">
@@ -172,7 +203,7 @@
 
         <!--        </section>-->
 
-    </section>
+
     <!--    TODO: BEGIN LOAD TRANSITION-->
     <div class="intro">
         <div class="intro-text">
