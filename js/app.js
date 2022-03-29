@@ -1,9 +1,21 @@
 // TODO: GSAP STUFF
+gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline({defaults:{ease: "power1.out"}});
 
 tl.to(".text",{y:"0", duration:1, stagger:0.25});
 tl.to(".slider",{y:"-100%", duration: 1.5,delay:0.5});
 tl.to(".intro",{y:"-100%",duration:1}, "-=.8");
+
+function init(){
+    gsap.to(".developer", {x: 234,scrollTrigger: {
+        trigger: ".developer",
+            scrub: .8
+        }})
+    gsap.to(".fullstack", {x: -234,scrollTrigger: {
+            trigger: ".fullstack",
+            scrub: .2
+        }})
+}
 
 // TODO: DOM STUFF
 // Global Variables
@@ -65,3 +77,6 @@ hamburger.addEventListener('click', animateLinks);
 //cursor animation
 // window.addEventListener("mousemove", cursor)
 // window.addEventListener('DOMContentLoaded', turnLettersPurple);
+window.addEventListener('load', function(){
+    init();
+});
