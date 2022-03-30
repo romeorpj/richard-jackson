@@ -7,11 +7,11 @@ tl.to(".slider",{y:"-100%", duration: 1.5,delay:0.5});
 tl.to(".intro",{y:"-100%",duration:1}, "-=.8");
 
 function init(){
-    gsap.to(".developer", {x: 234,scrollTrigger: {
+    gsap.to(".developer", {x: 200,scrollTrigger: {
         trigger: ".developer",
             scrub: .8
         }})
-    gsap.to(".fullstack", {x: -234,scrollTrigger: {
+    gsap.to(".fullstack", {x: -100,scrollTrigger: {
             trigger: ".fullstack",
             scrub: .2
         }})
