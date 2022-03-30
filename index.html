@@ -15,17 +15,46 @@
 </head>
 <body>
 <main>
-        <section class="landing">
-            <nav class="nav-links">
-<!--                <div class="nav-logo"><p>Richard<br>Jackson</p></div>-->
-                <div class="nav-quote"><p>i can handle this!</p></div>
-                <div class="availability">
-                    <p class="status">current status:</p>
-                    <p>now available for work</p></div>
-                <div class="contact">
-                    <a href="#email-me"><button type="submit" class="nav-contact-btn" >Contact</button></a>
+<!--<div class="cursor"></div>-->
+
+
+            <nav>
+<!--                <div class="logo">-->
+<!--                    <img src="logo.svg" alt="Logo Image">-->
+<!--                </div>-->
+                <div class="hamburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
+                <ul class="nav-links">
+                    <li><a href="#">To Top</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#email-me">Contact</a></li>
+                    <li><a href="https://github.com/romeorpj"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/richard-jackson-049779231/"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
             </nav>
+
+
+
+
+
+
+<!--            TODO: OLD NAVLINKS-->
+<!--            <nav class="nav-links">-->
+<!--&lt;!&ndash;                <div class="nav-logo"><p>Richard<br>Jackson</p></div>&ndash;&gt;-->
+<!--                <div class="nav-quote"><p>i can handle this!</p></div>-->
+<!--                <div class="availability">-->
+<!--                    <p class="status">current status:</p>-->
+<!--                    <p>now available for work</p></div>-->
+<!--                <div class="contact">-->
+<!--                    <a href="#email-me"><button type="submit" class="nav-contact-btn" >Contact</button></a>-->
+<!--                </div>-->
+<!--            </nav>-->
             <div class="hero-section">
                 <div class="introduction-section">
                     <p class="introduction-name">Hello, I'm Richard 😄</p>
@@ -38,36 +67,38 @@
                     <a href="#email-me"><button type="submit" class="introduction-btn">Get In Touch</button></a>
                 </div>
                 <div class="fullstack-section">
-                    <p class="fullstack">Fullstack</p>
-                    <p class="developer">Developer</p>
+                    <p class="fullstack">available</p>
+                    <p class="developer">for work</p>
                 </div>
             </div>
-            <div class="about-section">
-                <div class="about-design">
-                    <h2 class="title-h2">about me.</h2>
-<!--                    <div class="h2-divider"></div>-->
-<!--                    <img src="img/polygon02.png" alt="polygon object" class="polygon-h2">-->
-                </div>
-                <div class="about-details">
-                    <p class="about-me-paragraph">
-                        <span>Hello friends!</span> My name is Richard Jackson and if I am not somewhere eating cake
-                        <span class="cake-emojis">🍰</span>
-                        and watching cartoons with my kids... I'm problem nerding
-                        out over all the cool things you can
-                        do with code on the internet.</p>
-                    <div class="about-me-richard-wrapper">
-                        <img src="img/richardincar.JPG" alt="it is I, Richard" class="about-me-richard">
-                    </div>
+            <div class="about-section" id="about">
 
+                <div class="about-details">
+                    <div class="about-left">
+                        <div class="about-design">
+                            <h2 class="title-h2">about me.</h2>
+                        </div>
+                        <p class="about-me-paragraph">
+                            <span>Hi friends!</span> My name is Richard Jackson and if I am not somewhere eating cake
+                            <span class="cake-emojis">🍰</span>
+                            and watching cartoons with my kids... I'm problem nerding
+                            out over all the cool things you can
+                            do with code on the internet.</p>
+                    </div>
+<!--<div class="tester"></div>-->
+                    <div class="about-me-richard-wrapper">
+                        <img src="img/richcar.JPG" alt="it is I, Richard" class="about-me-richard">
+                    </div>
                 </div>
             </div>
             <section class="positive-quote">
                 <p>be positive</p>
                 <img src="img/polygon07.png" class="positive-polygon" alt="polygon">
             </section>
-        </section>
-            <section class="skills-section">
-                <div class="skills-gradient-purple"></div>
+<div class="skills-outerwrapper">
+    <div class="skills-gradient-purple"></div>
+            <section class="skills-section" id="skills">
+
                 <h2>need talent?</h2>
                 <h2>...i got you covered</h2>
                 <div class="skills-list-section">
@@ -96,9 +127,10 @@
                     </div>
 
                 </div>
-                <div class="skills-gradient-black"></div>
-            </section>
 
+            </section>
+    <div class="skills-gradient-black"></div>
+</div>
 
         <section class="positive-quote quote-box">
             <p>be bold</p>
@@ -106,48 +138,57 @@
 <!--            <button type="submit" class="btn">Contact Me</button>-->
         </section>
 
-        <section class="projects-section">
+        <section class="projects-section" id="projects">
             <div class="about-design">
                 <h2 class="title-h2">Projects.</h2>
                 <!--                    <div class="h2-divider"></div>-->
 <!--                <img src="img/polygon05.png" alt="polygon object" class="polygon-h2">-->
             </div>
             <div class="projects-grid">
-                <div class="image-containers">
+                <a href="https://romeorpj.github.io/weather-mappy/" target="_blank" > <div class="image-containers">
                     <img src="/img/project-images/weather-mappy.jpg" alt="weather map">
                     <div class="project-title-wrapper">
                         <p class="project-title">weathermappy</p>
                     </div>
-                </div>
-                <div class="image-containers">
+                </div></a>
+
+
+                <a href="https://romeorpj.github.io/Javascript-clock/" target="_blank" >
+                    <div class="image-containers">
                     <img src="/img/project-images/clocks.jpg" alt="clocks">
                     <div class="project-title-wrapper">
                         <p class="project-title">working clocks</p>
                     </div>
-                </div>
-                <div class="image-containers">
+                </div></a>
+
+
+                    <a href="https://romeorpj.github.io/week8-FirstReactApp/" target="_blank" > <div class="image-containers">
                     <img src="/img/project-images/signup-form.jpg" alt="signup form">
                     <div class="project-title-wrapper">
                         <p class="project-title">signup form</p>
                     </div>
-                </div>
-                <div class="image-containers">
+                </div></a>
+
+
+                        <a href="https://romeorpj.github.io/beatmachineio/" target="_blank" > <div class="image-containers">
                     <img src="/img/project-images/beat-machine.jpg" alt="beat machine">
                     <div class="project-title-wrapper">
                         <p class="project-title">beat machine</p>
                     </div>
-                </div>
-                <div class="image-containers">
+                </div></a>
+
+
+                            <a href="https://romeorpj.github.io/reactcard-groot/" target="_blank" > <div class="image-containers">
                     <img src="/img/project-images/groot-card.jpg" alt="groot card">
                     <div class="project-title-wrapper">
-                        <p class="project-title">beat machine</p>
+                        <p class="project-title">Groot Card Project</p>
                     </div>
-                </div>
+                </div></a>
 
 
             </div>
         </section>
-    <section class="landing">
+
         <div class="contact-section-wrapper" id="email-me">
             <div class="contact-section">
                 <div class="about-section">
@@ -171,7 +212,7 @@
 
         <!--        </section>-->
 
-    </section>
+
     <!--    TODO: BEGIN LOAD TRANSITION-->
     <div class="intro">
         <div class="intro-text">
@@ -195,6 +236,8 @@
 
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </body>
 </html>
